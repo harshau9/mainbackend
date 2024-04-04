@@ -18,10 +18,10 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("HOMEPAGE");
 });
-const PORT  = process.env.PORT || 8080;
+
 
 app.use(`/user`, userRoutes)
 app.use('/categories', categoryRoutes);
 app.use('/products', productRoutes);
 
-app.listen(PORT, console.log(`server is running on port ${PORT}`));
+app.listen(8080, console.log(`server is running on port 8080`));
