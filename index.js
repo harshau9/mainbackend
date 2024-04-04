@@ -5,8 +5,6 @@ const userRoutes = require("./routes/userRoutes")
 const categoryRoutes = require("./routes/categoryRoutes")
 const productRoutes = require("./routes/productRoutes")
 const cors=require("cors");
-
-connectDB()
 const app =express();
 
 app.use(cors({
