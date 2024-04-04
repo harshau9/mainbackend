@@ -15,6 +15,9 @@ app.use(cors({
   origin:"*"
 }))
 app.use(express.json());
+app.get("/", (req, res) => {
+  res.send("HOMEPAGE");
+});
 const PORT  = process.env.PORT || 8080;
 
 app.use(`/user`, userRoutes)
