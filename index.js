@@ -1,12 +1,11 @@
 const express = require("express");
-const dotenv = require("dotenv");
+require("dotenv").config();
 const { connection } = require("./configs/db");
 const userRoutes = require("./routes/userRoutes")
 const categoryRoutes = require("./routes/categoryRoutes")
 const productRoutes = require("./routes/productRoutes")
 const cors=require("cors");
 
-dotenv.config()
 connectDB()
 const app =express();
 
