@@ -21,8 +21,4 @@ app.use(`/user`, userRoutes)
 app.use('/categories', categoryRoutes);
 app.use('/products', productRoutes);
 
-// middlewares to handle error messages
-app.use(notFound)
-app.use(errorHandler)
-
 app.listen(PORT, console.log(`server is running on port ${PORT}`));
